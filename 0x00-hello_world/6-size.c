@@ -1,9 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - print the string in the put funcation
- * Description: using the main function 
- * Return: Always 0 (Success)
+ *
+ * main - print the string put funcation
+ * comments in C source code.
+ *
+ * Description: using the main funcation.
+ * that prints the size of various types on the computer it is,
+ * compiled and run on.
+ * Return: 0
  */
 
 int main(void)
