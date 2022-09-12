@@ -1,7 +1,8 @@
 #include <stdio.h>                                                                                                                    
 
 /**                                                                                                                                   
- * Description: main - Prints sizeof many var types                                                                                   * Return: Always 0(Success)                                                                                                          
+ * Description: main - Prints sizeof many var types
+ * Return: Always 0(Success)                                                                                                          
  */                                                                                                                                   
 int main(void)                                                                                                                       
 {                    
