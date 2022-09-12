@@ -1,13 +1,11 @@
-
 #include <stdio.h>
-
- int main(void)
-      	{
-			  /**
-			   * printf() displays the string inside quotation
-			  */
-			    puts("\"Programming is like building a multilingual puzzle");
-			   
-			   return 0;
-			  
-			        }
+/**
+ *main print the straing in the put fucation
+ * the program print Programming is like building a multilingual puzzle
+ * Reterun: 0
+  */
+int main (void)
+{
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
+}
