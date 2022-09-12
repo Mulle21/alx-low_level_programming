@@ -1,11 +1,9 @@
-#include <stdio.h>
-/**
- * main - print the straing in the put fucation
+#incloud <stdio.h>
 
- * Description: using the main funcation
- * the program print Programming is like building a multilingual puzzle
- * Reterun: 0
-  */
+/**
+ * Description: main - Prints out a string
+ * Return: 0 if success
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
