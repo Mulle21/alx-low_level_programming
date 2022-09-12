@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
- * main print the straing in the put fucation
+ * main - print the straing in the put fucation
+
+ * Description: using the main funcation
  * the program print Programming is like building a multilingual puzzle
- * Reterun0
+ * Reterun: 0
   */
 int main(void)
 {
