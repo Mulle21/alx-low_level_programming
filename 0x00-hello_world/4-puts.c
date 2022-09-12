@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *main print the straing in the put fucation
+ * main print the straing in the put fucation
  * the program print Programming is like building a multilingual puzzle
- * Reterun: 0
+ * Reterun0
   */
 int main(void)
 {
