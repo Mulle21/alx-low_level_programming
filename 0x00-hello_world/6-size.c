@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - print the string put funcation
  * comments in C source code.
  *
