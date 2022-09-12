@@ -1,4 +1,4 @@
-#incloud <stdio.h>
+#include <stdio.h>
 
 /**
  * Description: main - Prints a text
