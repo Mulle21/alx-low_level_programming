@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 /**
@@ -8,14 +9,16 @@
  */
 int main(void)
 {
-	char a;
-	int b;
-	long int c;
-	long long int d;
+	char c;
+	int i;
+	long int li;
+	long long int lli;
 	float f;
 
-	print("Size of char: %ld byte(s)\n", sizeof(a));                                                                                      print("Size of int: %ld byte(s)\n", sizeof(b));  
-	print("Size of long int: %ld byte(s)\n", sizeof(c));
-	print("Size of long long int: %ld byte(s)\n", sizeof(d));                                                                             print("Sizee of float: %ld byte(s)\n", sizeof(f));
+	print("Size of a char: %ld byte(s)\n", sizeof(c));
+       	print("Size of int: %ld byte(s)\n", sizeof(i));
+	print("Size of long int: %ld byte(s)\n", sizeof(li));
+	print("Size of long long int: %ld byte(s)\n", sizeof(lli));
+       	print("Sizee of float: %ld byte(s)\n", sizeof(f));
 	return (0);
 }
