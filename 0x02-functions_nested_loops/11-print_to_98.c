@@ -12,7 +12,7 @@ void print_to_98(int n)
 		{
 			if (i != 98)
 
-				print("%, ", i);
+				print("%d, ", i);
 			else if (i == 98)
 				print("%d\n", i);
 		}
