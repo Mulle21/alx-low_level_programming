@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_sign - print the sign of a number
  * @n: the int to check
@@ -19,5 +20,5 @@ int print_sign(int n)
 	{
 		_putchar('-');
 	}
-        	 return (-1); 
+		return (-1); 
 }
