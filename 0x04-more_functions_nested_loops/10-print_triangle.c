@@ -1,27 +1,31 @@
 #include "main.h"
 
 /**
- * more_numbers - fuction test if enter is digit
- *
- *
- *
+ * print_triangle - prints a triangle, followed by a new line
+ * @size: size of the triangle
  */
-
-void more_numbers(void)
+void print_triangle(int size)
 {
-	int i, j;
-
-	for (i = 0; i < 10; i++)
+	if (size <= 0)
 	{
-		for (j = 0; j <= 14; j++)
+		_putchar('\n');
+	} else
+	{
+		int i, j;
+
+		for (i = 1; i <= size; i++)
 		{
-			if (j >= 10)
+			for (j = i; j < size; j++)
 			{
-				_putchar(j / 10 + '0');
+				_putchar(' ');
 			}
-			_putchar(j % 10 + '0');
+
+			for (j = 1; j <= i; j++)
+			{
+				_putchar('#');
+			}
+
+			_putchar('\n');
 		}
 	}
-	_putchar('\n');
-
 }
