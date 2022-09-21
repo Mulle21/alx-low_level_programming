@@ -4,7 +4,7 @@
 /**
  * _isupper - function to print string
  *
- * @c : is parameter
+ *@c : is parameter
  * Return: always 0 (sucess)
  */
 
