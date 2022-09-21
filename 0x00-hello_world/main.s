@@ -1,22 +1,23 @@
-.file   "main.c"
-    .intel_syntax noprefix
+ .file   "main.c"
     .text
-    .globl  main
-    .type   main, @function
-main:
+    .globl  myfunc
+    .type   myfunc, @function
+myfunc:
 .LFB0:
     .cfi_startproc
-    push    rbp
+    pushq   %rbp
     .cfi_def_cfa_offset 16
     .cfi_offset 6, -16
-    mov rbp, rsp
+    movq    %rsp, %rbp
     .cfi_def_cfa_register 6
-    mov eax, 0
-    pop rbp
+    movl    %edi, -4(%rbp)
+    movl    -4(%rbp), %eax
+    addl    $1, %eax
+    popq    %rbp
     .cfi_def_cfa 7, 8
     ret
     .cfi_endproc
 .LFE0:
-    .size   main, .-main
-    .ident  "GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.2) 5.4.0 20160609"
+    .size   myfunc, .-myfunc
+    .ident  "GCC: (Ubuntu 8.3.0-6ubuntu1) 8.3.0"
     .section    .note.GNU-stack,"",@progbits
