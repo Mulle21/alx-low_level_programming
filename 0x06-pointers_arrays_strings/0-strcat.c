@@ -11,7 +11,7 @@ char *_strcat(char *dest, char *src)
 	int i;
 	int j;
 
-	int = 0;
+	i = 0;
 	while (dest[i] != '\0')
 	{
 		i++;
@@ -23,7 +23,11 @@ char *_strcat(char *dest, char *src)
 		i++;
 		j++;
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 6c58f52131aa3dc63ce070304ad588e717a8e15e
 	dest[i] = '\0';
 	return (dest);
 }
