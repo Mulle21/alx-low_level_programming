@@ -2,15 +2,15 @@
 #include <stdio.h>
 
 /**
- * _isupper - function to print string
+ * _isdigit - fuction test if enter is digit
  *
  *@c : is parameter
  * Return: always 0 (sucess)
  */
 
-int _isupper(int c)
+int _isdigit(int c)
 {
-	if (c <= 'Z' && c >= 'A')
+	if (c <= '9' && c >= '0')
 	{
 		return (1);
 	}
