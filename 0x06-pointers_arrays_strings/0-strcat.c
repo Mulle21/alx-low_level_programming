@@ -1,20 +1,11 @@
-#include "main.h"                                         
+#include "main.h"                                                  
 
-                                                          
-
-/**                                                       
- *
- *  * _strcat - function commute srtings                     
- *
- *   * @dest: param pointer to a cha                          
- *
- *    * @src: param pointer to a ch                            
- *
- *     * Return: return value of det.                           
- *
- *      */                                                       
-
-                                                          
+/**                                                
+ * _strcat - function commute srtings                    
+ * @dest: param pointer to a cha                          
+ * @src: param pointer to a ch                            
+ * Return: return value of det.                           
+ */                                                                                                              
 
 char *_strcat(char *dest, char *src)                      
 {
