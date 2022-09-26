@@ -1,7 +1,2 @@
-<<<<<<< HEAD
-!#/bin/bash
-gcc -S -masm=intel $CFILE
-=======
 #!/bin/bash
-gcc -S -masm=intel $CFILE -o ${CFILE//'.c'/'.s'}
->>>>>>> 3d4e4f1dec6435b9f65b2963470547a09c746383
+gcc -masm=intel -S $CFILE
