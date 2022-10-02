@@ -5,7 +5,7 @@
  * main - funtion
  * @argc: legenth of argv
  * @argv: number of argummet
- * Return: Always 0
+ * Return: 0 (Success), 1 (Error)
  */
 int main(int argc, char *argv[])
 {
