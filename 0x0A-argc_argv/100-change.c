@@ -5,16 +5,16 @@
 /**
  * main - prints the minimum number of coins to
  * make change for an amount of money
- * @argc: legenth of argv
- * @argv: number of argummet
+ * @argc: number of arguments
+ * @argv: array of arguments
  *
  * Return: 0 (Success), 1 (Error)
  */
 int main(int argc, char *argv[])
 {
-	int num, j, change;
+	int num, j, result;
 	int coins[] = {25, 10, 5, 2, 1};
-	
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	}
 
 	num = atoi(argv[1]);
-       	change = 0;
+	result = 0;
 
 	if (num < 0)
 	{
@@ -32,13 +32,13 @@ int main(int argc, char *argv[])
 
 	for (j = 0; j < 5 && num >= 0; j++)
 	{
-			while (num >= coins[j])
-			{
-				change++;
-				num -= coins[j];
-			}
+		while (num >= coins[j])
+		{
+			result++;
+			num -= coins[j];
+		}
 	}
-	
-	printf("%d\n", change);
+
+	printf("%d\n", result);
 	return (0);
 }
