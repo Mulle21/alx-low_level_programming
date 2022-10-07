@@ -1,3 +1,21 @@
+Skip to content
+KipronohVincent
+/
+alx-low_level_programming
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+More
+alx-low_level_programming/0x0C-more_malloc_free/101-mul.c
+@KipronohVincent
+KipronohVincent more_malloc
+ History
+ 1 contributor
+101 lines (93 sloc)  1.67 KB
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -60,7 +78,7 @@ int main(int argc, char *argv[])
 {
 	char *s1, *s2;
 	int len1, len2, len, i, carry, digit1, digit2, *result, a = 0;
-	
+
 	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
 		errors();
@@ -99,3 +117,17 @@ int main(int argc, char *argv[])
 	free(result);
 	return (0);
 }
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
