@@ -1,20 +1,29 @@
-#include <stdlib.h>
 #include "main.h"
 
 /**
- * *malloc_checked - allocates memory using malloc
- * @b: number of bytes to allocate
+ * array_range - creates an array of integers
+ * @min: smallest number in the array
+ * @max: lagrest value in the array
  *
- * Return: a pointer to the allocated memory
+ * @max: lagrest value in the array
  */
-void *malloc_checked(unsigned int b)
+int *array_range(int min, int max)
 {
-	void *ptr;
+	int *block;
+	int i, j = 0;
 
-	ptr = malloc(b);
-	
-	if (ptr == NULL)
-		exit(98);
-
-	return (ptr);
+	if (min > max)
+		return (NULL);
+	block = malloc(sizeof(*block) * ((max - min) + 1));
+	if (block != NULL)
+	{
+		for (i = min; i <= max; i++)
+		{
+			block[j] = i;
+			j++;
+		}
+		return (block);
+	}
+	else
+		return (NULL);
 }
