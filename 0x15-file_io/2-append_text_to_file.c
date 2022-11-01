@@ -1,4 +1,9 @@
-#include "main.h"
+/*
+ * File: 2-append_text_to_file.c
+ * Auth: Brennan D Baraban
+ */
+
+include "main.h"
 
 /**
  * append_text_to_file - Appends text at the end of a file.
