@@ -1,30 +1,31 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#include "hash_tables.h"
 
-#include <stdio.h>
-#include <stdlib.h>
+/**
+ * hash_table_create - creates a hash table.
+ * @size: size of an array.
+ *
+ * Return: a pointer to the newly created hash table.
+ *         or Null if it fails.
+ */
 
-int _putchar(char c);
-int _islower(int c);
-int _isalpha(int c);
-int _abs(int n);
-int _isupper(int c);
-int _isdigit(int c);
-int _strlen(char *s);
-void _puts(char *s);
-char *_strcpy(char *dest, char *src);
-int _atoi(char *s);
-char *_strcat(char *dest, char *src);
-char *_strncat(char *dest, char *src, int n);
-char *_strncpy(char *dest, char *src, int n);
-int _strcmp(char *s1, char *s2);
-char *_memset(char *s, char b, unsigned int n);
-char *_memcpy(char *dest, char *src, unsigned int n);
-char *_strchr(char *s, char c);
-unsigned nclude <stdio.h>
+hash_table_t *hash_table_create(unsigned long int size)
+{
+hash_table_t *hash_table;
+unsigned long int i;
 
-int _strspn(char *s, char *accept);
-char *_strpbrk(char *s, char *accept);
-char *_strstr(char *haystack, char *needle);
-
-#endif
+if (size == 0)
+return (NULL);
+hash_table = malloc(sizeof(hash_table_t));
+if (hash_table == NULL)
+return (NULL);
+hash_table->size = size;
+hash_table->array = malloc(sizeof(hash_node_t *) * size);
+if (hash_table->array == NULL)
+{
+free(hash_table);
+return (NULL);
+}
+for (i = 0; i < size; i++)
+hash_table->array[i] = NULL;
+return (hash_table);
+}
